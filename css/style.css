@@ -1,7 +1,7 @@
 /* =========================== Google Font ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
-
+/* Base CSS Style */
 
 * {
     margin: 0;
@@ -10,12 +10,68 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 img {
     width: 100%;
 }
 
+/* Reusable CSS Classes */
+
 .container {
     width: 75%;
     max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 7rem;
+}
+
+
+/* ========== Header & Nav Style ================ */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 20px 0;
+    background: rgba(255, 144, 14, 0.10);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__logo {
+    color: #131313;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav__link {
+    color:#424242;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    /* 144.444% */
+    cursor: pointer;
 }
