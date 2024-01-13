@@ -228,6 +228,28 @@ img {
    height: 50px;
 }
 
+
+/*================================ Footer Section Style ======================*/
+.footer {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.footer__content {
+    text-align: center;
+    padding: 38px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+
+.footer__text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #424242;
+}
+
+
+
 /*========================== Media Query for Smallest Device =============================*/
 
 @media screen and (max-width: 420px) {
@@ -309,6 +331,14 @@ img {
         align-items: center;
     }
 
+    .footer__content {
+        padding: 20px;
+    }
+
+    .footer__text {
+        font-size: 16px;
+    }
+
 }
 
 /*====================== Media Query for  Medium device ===========================*/
@@ -351,6 +381,10 @@ img {
 
     .sponspors__heading .section__description {
         width: 100%;
+    }
+
+    .footer__content {
+        padding: 20px;
     }
 
 }
