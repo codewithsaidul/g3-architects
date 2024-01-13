@@ -40,7 +40,7 @@ img {
 .header {
     width: 100%;
     /* height: 5rem; */
-    padding: 20px 0 50px;
+    padding: 20px 0px 50px;
     background: rgba(255, 144, 14, 0.10);
 }
 
@@ -79,14 +79,12 @@ img {
 .banner__content {
     margin-top: 116px;
     text-align: center;
-    margin-bottom: 100px;
 }
 
 .banner__title {
     color: #131313;
     font-size: 64px;
     font-weight: 700;
-    width: 862px;
     margin: 0 auto 20px;
 }
 
@@ -96,8 +94,7 @@ img {
     font-weight: 400;
     line-height: 26px;
     /* 162.5% */
-    width: 868px;
-    margin: 0 auto 30px;
+    margin: 0 0 30px;
 }
 
 
@@ -115,5 +112,86 @@ img {
 
 .banner__img {
     margin-top: 60px;
-    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+/* Smallest Device */
+
+@media screen and (max-width: 420px) {
+
+    .nav__logo {
+        font-size: 30px;
+    }
+    .nav__list {
+        flex-direction: column;
+    }
+    .banner__title {
+        font-size: 1rem;
+    }
+
+    .banner__description {
+        font-size: 12px;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    /* .header {
+        padding: 20px;
+    } */
+    .nav {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+
+    .banner__title {
+        font-size: 2rem;
+    }
+
+    .banner__description {
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 50px;
+    }
+}
+
+/* medium device */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    .nav {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+   
+    .banner__title {
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+    .nav__logo {
+        font-size: 25px;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+
+    .banner__title {
+        font-size: 55px;
+    }
 }
