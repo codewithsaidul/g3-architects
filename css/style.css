@@ -371,7 +371,8 @@ img {
 
 
     .team__container,
-    .sponspors__container {
+    .sponspors__container,
+    .feature__container {
         flex-direction: column;
         row-gap: 2rem;
     }
@@ -379,6 +380,21 @@ img {
     .team__content {
         margin-left: 0;
     }
+
+
+    .feature__heading .section__title {
+        border-left: 0;
+        border-bottom: 5px solid #FF900E;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .feature__heading .section__description {
+        text-align: center;
+    }
+
 
     .facts__heading {
         text-align: center;
@@ -425,7 +441,8 @@ img {
         font-size: 45px;
     }
 
-    .team__container {
+    .team__container,
+    .feature__container {
         flex-direction: column;
         row-gap: 2rem;
     }
@@ -477,7 +494,8 @@ img {
         font-size: 55px;
     }
 
-    .team__container {
+    .team__container,
+    .feature__container {
         flex-direction: column;
         row-gap: 2rem;
     }
