@@ -203,6 +203,31 @@ img {
 }
 
 
+/*===================== Sponspors Section Style =============================== */
+.sponspors__heading {
+    text-align: center;
+}
+
+
+.sponspors__heading .section__description {
+    width: 542px;
+    margin: 0 auto;
+}
+
+.sponspors__container {
+    margin-top: 50px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    gap: 50px;
+    text-align: center;
+}
+
+.sponspors__img {
+   width: 165px;
+   height: 50px;
+}
+
 /*========================== Media Query for Smallest Device =============================*/
 
 @media screen and (max-width: 420px) {
@@ -253,7 +278,8 @@ img {
     }
 
 
-    .team__container {
+    .team__container,
+    .sponspors__container {
         flex-direction: column;
         row-gap: 2rem;
     }
@@ -273,6 +299,14 @@ img {
     .facts__container {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 2rem;
+    }
+    
+    .sponspors__heading .section__description {
+        width: 100%;
+    }
+
+    .sponspors__container {
+        align-items: center;
     }
 
 }
@@ -313,6 +347,10 @@ img {
     .facts__container {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem 1rem;
+    }
+
+    .sponspors__heading .section__description {
+        width: 100%;
     }
 
 }
@@ -356,7 +394,7 @@ img {
 
 
 /*=============== Media Query for Medium Large Device ===================*/
-@media screen and (min-width: 1025px) and (max-width: 1291px) {
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
     .facts__container {
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
