@@ -219,6 +219,7 @@ img {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 1rem;
     background-color: #FF900E;
     text-align: center;
@@ -227,6 +228,22 @@ img {
     position: absolute;
     bottom: -50px;
     left: -20px;
+}
+
+.feature__button h2 {
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+    /* 107.692% */
+}
+
+.feature__button span {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
 }
 
 
