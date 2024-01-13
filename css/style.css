@@ -32,7 +32,22 @@ img {
 }
 
 .section {
-    margin-top: 7rem;
+    margin-top: 5.3125rem;
+}
+
+.section__title {
+    font-size: 45px;
+    color: #131313;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.section__description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 2rem;
 }
 
 
@@ -117,8 +132,32 @@ img {
 
 
 
+/* Team Sectionn Style */
+.team__container {
+    display: flex;
+    align-items: center;
+}
 
+.team__img-container {
+    display: grid;
+    flex-basis: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
+.team__content {
+    flex-basis: 50%;
+    margin-left: 70px;
+}
+
+.team__content .section__title .gray {
+    color: #727272;
+    font-weight: 500;
+}
+
+.team__content .section__title .gold {
+    color: #FF900E;
+}
 
 /* Smallest Device */
 
@@ -188,7 +227,7 @@ img {
     }
 
     .nav__list {
-        gap: 20px;
+        gap: 40px;
     }
 
     .banner__title {
